@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddPhotoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/addPhoto_goBackImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="goMainActivityImage">
+
+        </ImageView>
+
+
+        <ImageView
+            android:layout_marginTop="10sp"
+            android:id="@+id/addPhoto_ImageView"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:src="@drawable/gorsel_sec"
+            android:layout_gravity="center"
+            android:onClick="resimSecClick">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/addPhoto_edittextKonum"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Konum Girin"
+            android:textColorHint="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/addPhoto_edittextZaman"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Zaman Girin"
+            android:textColorHint="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/addPhoto_edittextAciklama"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:hint="Açıklama Girin"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+        </EditText>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addPhoto_btnEkle"
+            android:layout_width="160dp"
+            android:layout_height="70dp"
+            android:text="Ekle"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/pinkBG2"
+            android:textSize="20dp"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:onClick="kitapEkleBtnClick">
+
+
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
